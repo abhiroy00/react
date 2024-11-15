@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Counter from './componets/Counter'
+import Hello from './componets/Hello'
+import Form from './componets/Form'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const name="Abhi roy"
+
+const detail={
+  name:"abhi roy",
+  age:25,
+  height:6.2
 }
 
-export default App;
+export default function App() {
+  return (
+    <div>
+     
+     <Form></Form>
+      
+    </div>
+  )
+}
